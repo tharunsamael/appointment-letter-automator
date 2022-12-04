@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Appointment Letter Automator</title>
+    </head>
+    <body>
+        <h1>APPOINTMENT LETTER AUTOMATOR</h1>
+        <form id="myForm" action="http://localhost:3000/upload" method="post" enctype="multipart/form-data">
+            <div class="templateFile">
+                <label for="uploadFile" id="sample">Enter your sample file: </label>
+                <input name="uploadFile" id="sampleFile" type="file" accept=".docx">
+            </div>
+            <div class="repStr" id="repStr">
+                <label for="repString" id="replaceString">Enter the words you want to replace:</label>
+                <input name="repString" id="repString" type="text">
+            </div>
+            <div class="repExcelFile">
+                <label for="uploadFile" id="excel">Enter your Excel file:</label>
+                <input name="uploadFile" id="excelFile" type="file" accept=".xls, .xlsx">
+            </div>
+            <div class="btn">
+                <button type="submit">CONVERT</button>
+            </div>
+        </form>
+    </body>
+</html>
